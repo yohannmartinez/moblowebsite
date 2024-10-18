@@ -1,6 +1,7 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
 	import IconCreations from '~icons/tabler/cards';
+	import Story from './story.svelte';
 </script>
 
 <div class="flex w-full items-center justify-center px-6 py-20">
@@ -17,8 +18,15 @@
 				class="text-[var(--gray)]">— all through one weekly email.</span
 			>
 		</p>
-		<Button class="rounded-full p-6 text-sm font-semibold"
+		<Button class="mb-5 rounded-full p-6 text-sm font-semibold"
 			><IconCreations class="mr-2 text-lg" />Collection</Button
 		>
+		<div class="flex items-center justify-center gap-2">
+			<img src="/images/creations.png" alt="creations" class="w-16" />
+			<span class="text-center text-sm tracking-tight text-[var(--gray)]">
+				10+ créations à découvrir
+			</span>
+		</div>
 	</div>
 </div>
+<Story />
